@@ -23,6 +23,7 @@ Basics
    basics/user-management
    basics/overriding-models
    basics/overriding-views
+   basics/overriding-controllers
 
 How-to
 ------
