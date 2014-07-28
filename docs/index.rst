@@ -24,6 +24,7 @@ Basics
    basics/overriding-models
    basics/overriding-views
    basics/overriding-controllers
+   basics/social-auth
 
 How-to
 ------
