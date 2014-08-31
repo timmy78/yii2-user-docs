@@ -9,21 +9,21 @@ Available configuration options
 - **enableRegistration** Whether registration is enabled. Defaults to **True**.
 
 - **enableGeneratingPassword** Whether password field is not shown on signup
-page and password is generated automatically and sent to user via email.
-Defaults to **False**.
+  page and password is generated automatically and sent to user via email.
+  Defaults to **False**.
 
 - **enableConfirmation** Whether users have to confirm their accounts by
-clicking confirmation link sent them by email. In order to enable this option
-you have to configure **mail** application component. Defaults to **True**.
+  clicking confirmation link sent them by email. In order to enable this option
+  you have to configure **mail** application component. Defaults to **True**.
 
 - **enableUnconfirmedLogin** Whether users are allowed to sign in without
-activating their accounts. Default to **False**.
+  activating their accounts. Default to **False**.
 
 - **enablePasswordRecovery** Whether users are allowed to recover their
-passwords. Defaults to **True**.
+  passwords. Defaults to **True**.
 
 - **enableEmailReconfirmation** Whether users have to reconfirm their email after
-changing it on settings page. Defaults to **False**.
+  changing it on settings page. Defaults to **False**.
 
 - **confirmWithin** The time in seconds before a confirmation token becomes invalid. After expiring this time user
   have to request new confirmation token on special page. Defaults to **86400** (24 hours).
