@@ -1,8 +1,9 @@
 List of available actions
 =========================
 
-Yii2-user includes a lot of actions, which you can access by creating URLs for them. Here is the table of available
-actions which contains route and short description of each action. You can create URLs for them using special Yii
+Yii2-user includes a lot of actions, which you can access by creating URLs for
+them. Here is the table of available actions which contains route and short
+description of each action. You can create URLs for them using special Yii
 helper ``\yii\helpers\Url::to()``.
 
 =================================== ========================================================

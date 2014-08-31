@@ -1,9 +1,10 @@
 Overriding models
 =================
 
-When you are creating application with Yii2-user you can find that you need to override models or forms.
-Yii2-user is very extensible and allows you to override any model. Yii2-user does not create models using
-"new" statement, instead it uses component named "ModelManager" which creates requested models. Here is
+When you are creating application with Yii2-user you can find that you need to
+override models or forms. Yii2-user is very extensible and allows you to override
+any model. Yii2-user does not create models using "new" statement, instead it
+uses component named "ModelManager" which creates requested models. Here is
 default model manager configuration:
 
 .. code-block:: php
@@ -19,8 +20,13 @@ default model manager configuration:
                     'manager' => [
                         // Active record classes
                         'userClass'    => 'dektrium\user\models\User',
+                        'tokenClass'   => 'dektrium\user\models\Token',
                         'profileClass' => 'dektrium\user\models\Profile',
                         'accountClass' => 'dektrium\user\models\Account',
+                        // Model that is used on user search on admin pages
+                        'userSearchClass' => 'dektrium\user\models\UserSearch',
+                        // Model that is used on registration
+                        'registrationFormClass' => 'dektrium\user\models\RegistrationForm',
                         // Model that is used on resending confirmation messages
                         'resendFormClass' => 'dektrium\user\models\ResendForm',
                         // Model that is used on logging in
@@ -41,7 +47,8 @@ default model manager configuration:
 Example
 -------
 
-Assume you decided to override user class and change registration process. Let's create new user class under `@app/models`.
+Assume you decided to override user class and change registration process. Let's
+create new user class under `@app/models`.
 
 .. code-block:: php
 

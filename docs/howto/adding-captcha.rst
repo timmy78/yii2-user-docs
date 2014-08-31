@@ -7,15 +7,15 @@ Adding captcha to forms is pretty easy and can be done in three steps:
 2. In the view you have to show captcha field
 3. In the controller you have to add captcha action
 
-In this howto I would like to show you how to add captcha field in the registration form but you can add
-captcha to any form following this steps.
+In this howto I would like to show you how to add captcha field in the
+registration form but you can add captcha to any form following this steps.
 
 1. Adding field and validation rules to model
 ---------------------------------------------
 
-First of all you need to override User model as described in special guide. After this done you have to add
-public property named **captcha** and validation rules. You also have to add **captcha** field to **register**
-scenario in order to allow it for mass-assignment.
+First of all you need to override Registration form as described in special guide.
+After this done you have to add public property named **captcha** and validation
+rules.
 
 .. code-block:: php
 
@@ -23,21 +23,12 @@ scenario in order to allow it for mass-assignment.
 
     namespace app\models;
 
-    class User
+    class RegistrationForm extends \dektrium\user\models\RegistrationForm
     {
         /**
          * @var string
          */
         public $captcha;
-        /**
-         * @inheritdoc
-         */
-        public function scenarios()
-        {
-            $scenarios = parent::scenarios();
-            $scenarios['register'][] = 'captcha';
-            return $scenarios;
-        }
         /**
          * @inheritdoc
          */
@@ -54,9 +45,11 @@ scenario in order to allow it for mass-assignment.
 2. Adding widget to the view
 ----------------------------
 
-Before doing this step you have to configure view application component as described in guide. After this
-done you have to create new file named **register.php** in **@app/views/user/registration**. Now you have to
-add widget to registration form, just copy and paste following code into newly created view file.
+Before doing this step you have to configure view application component as
+described in guide. After this done you have to create new file named
+**register.php** in **@app/views/user/registration**. Now you have to add widget
+to registration form, just copy and paste following code into newly created view
+file.
 
 .. code-block:: php
 
@@ -69,7 +62,7 @@ add widget to registration form, just copy and paste following code into newly c
     /**
      * @var yii\web\View $this
      * @var yii\widgets\ActiveForm $form
-     * @var dektrium\user\models\User $user
+     * @var app\models\RegistrationForm $model
      */
     $this->title = Yii::t('user', 'Sign up');
     $this->params['breadcrumbs'][] = $this->title;
@@ -107,8 +100,9 @@ add widget to registration form, just copy and paste following code into newly c
 3. Adding action to the controller
 ----------------------------------
 
-In order to make captcha work you have to add captcha action to **app\\controllers\\SiteController** Maybe it
-is already added because standard Yii2 application template adds it automatically.
+In order to make captcha work you have to add captcha action to
+**app\\controllers\\SiteController** Maybe it is already added because standard
+Yii2 application template adds it automatically.
 
 .. code-block:: php
 
@@ -128,4 +122,3 @@ is already added because standard Yii2 application template adds it automaticall
         }
         ...
     }
-

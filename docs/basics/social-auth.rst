@@ -37,9 +37,9 @@ To get started you need to setup auth client collection application component:
 How it works
 ------------
 
-When you are going to log in you can click social network icon. If you have already logged in using that
-account you will be logged in. Otherwise you will be shown simple sign up form with two field (username and
-email).
+When you are going to log in you can click social network icon. If you have
+already logged in using that account you will be logged in. Otherwise you will
+be shown simple sign up form with two field (username and email).
 
 After you logged in you can go to accounts settings page and connect new account
 or disconnect already connected accounts.

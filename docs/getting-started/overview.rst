@@ -22,7 +22,7 @@ Yii2-user is an open-source project and released under the `MIT License`_. You a
 
 Yii2-user is a part of **Dektrium Project** which has been started with aim to provide useful extensions to your Yii2 application
 under one vendor namespace. We hope that by providing extensions to common requirements, we will help developers concentrate on
-the interesting things that their applications do. 
+the interesting things that their applications do.
 
 If you have any questions or comments, please use `Google Group`_ or Gitter_. You can also get news and updates from the Blog_.
 
@@ -31,4 +31,4 @@ If you have any questions or comments, please use `Google Group`_ or Gitter_. Yo
 .. _MIT License: https://github.com/dektrium/yii2-user/blob/master/LICENSE.md
 .. _Google Group: https://groups.google.com/group/yii2-user
 .. _Gitter: https://gitter.im/dektrium/yii2-user
-.. _Blog: https://dektrium.tumblr.com
+.. _Blog: https://yii2-user.blogspot.com

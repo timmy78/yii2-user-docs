@@ -33,17 +33,18 @@ How-to
     :maxdepth: 1
 
     howto/adding-captcha
-    howto/removing-password-field
 
 Feedback
 --------
 
-You are very welcome to help us improve the quality of Yii2-user documentation. Please contribute if you see any
-mistakes or actual errors. To get started you can read the `Contributing guide`_.
+You are very welcome to help us improve the quality of Yii2-user documentation.
+Please contribute if you see any mistakes or actual errors. To get started you
+can read the `Contributing guide`_.
 
 If you can not fix the bug or mistake by yourself, please open an `issue`_.
 
-Any kind of discussion about Yii2-user documentation is very welcome in our `Google group`_ or `Gitter`_.
+Any kind of discussion about Yii2-user documentation is very welcome in our
+`Google group`_ or `Gitter`_.
 
 .. _Contributing guide: https://github.com/dektrium/yii2-user-docs/blob/master/CONTRIBUTING.md
 .. _Google Group: https://groups.google.com/group/yii2-user

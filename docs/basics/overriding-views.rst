@@ -1,9 +1,10 @@
 Overriding views
 ================
 
-When you start using Yii2-user you will probably find that you need to override the default views provided by
-the module. Although view names are not configurable, Yii2 provides a way to override views using themes. To
-get started configure your view application component as follows:
+When you start using Yii2-user you will probably find that you need to override
+the default views provided by the module. Although view names are not
+configurable, Yii2 provides a way to override views using themes. To get started
+configure your view application component as follows:
 
 .. code-block:: php
 
@@ -22,17 +23,19 @@ get started configure your view application component as follows:
     ];
 
 
-In the above **pathMap** means that every view in @dektrium/user/views will be first searched under
-@app/views/user and if a view exists in the theme directory it will be used instead of the original view.
+In the above **pathMap** means that every view in @dektrium/user/views will be
+first searched under @app/views/user and if a view exists in the theme directory
+it will be used instead of the original view.
 
 Example
 -------
 
-An example of overriding registration page view demonstrated below. Make sure you have configured view
-application component.
+An example of overriding registration page view demonstrated below. Make sure you
+have configured view application component.
 
-In order to override registration view file you have to create **@app/views/user/registration/register.php**.
-Open it and paste there following code:
+In order to override registration view file you have to create
+**@app/views/user/registration/register.php**. Open it and paste there following
+code:
 
 .. code-block:: php
 
@@ -81,6 +84,6 @@ Open it and paste there following code:
     </div>
 
 
-Then open registration page and make sure that you see **'This view file has been overrided!'**. If you don't
-make sure you have properly configured your view component and created view file in needed location.
-
+Then open registration page and make sure that you see **'This view file has been overrided!'**.
+If you don't make sure you have properly configured your view component and
+created view file in needed location.
