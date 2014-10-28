@@ -42,6 +42,7 @@ Available configuration options
 
 - **urlRules** The rules to be used in URL management.
 
+- **webUserClass** The WebUser class
 
 Configuration example
 ---------------------
